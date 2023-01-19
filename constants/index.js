@@ -1,0 +1,3 @@
+export const PAGE_STATUS_SUCCESS = 200;
+export const PAGE_STATUS_NOT_FOUND = 404;
+export const PAGE_STATUS_MAINTENANCE = 503;

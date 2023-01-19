@@ -1,0 +1,131 @@
+$font-family-base: 'Quicksand', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-title: 'Ubuntu';
+
+$font-size-viewport-xs: 1vw;
+$font-size-viewport-sm: 1.25vw;
+$font-size-viewport-md: 2vw;
+$font-size-viewport-lg: 3vw;
+$font-size-viewport-xl: 5vw;
+
+$font-weights: (100, 200, 300, 400, 500, 600, 700);
+
+// for handling rem unit
+$base-html-font-size: (
+  xs: 12px,
+  sm: 14px,
+  md: 15px,
+  lg: 16px,
+  xl: 16px
+);
+
+// for another
+$font-sizes: (
+  1: (
+    xs: (font-size: clamp(3.75rem, $font-size-viewport-xs, 5rem), line-height: clamp(4rem, $font-size-viewport-xs, 5rem)),
+    sm: (font-size: clamp(3.75rem, $font-size-viewport-sm, 5rem), line-height: clamp(4rem, $font-size-viewport-sm, 5rem)),
+    md: (font-size: clamp(3.75rem, $font-size-viewport-md, 5rem), line-height: clamp(4rem, $font-size-viewport-md, 5rem)),
+    lg: (font-size: clamp(3.75rem, $font-size-viewport-lg, 5rem), line-height: clamp(4rem, $font-size-viewport-lg, 5rem)),
+    xl: (font-size: clamp(3.75rem, $font-size-viewport-xl, 5rem), line-height: clamp(4rem, $font-size-viewport-xl, 5rem))
+  ),
+  2: (
+    xs: (font-size: clamp(3.5rem, $font-size-viewport-xs, 4.5rem), line-height: clamp(3.75rem, $font-size-viewport-xs, 4.5rem)),
+    sm: (font-size: clamp(3.5rem, $font-size-viewport-sm, 4.5rem), line-height: clamp(3.75rem, $font-size-viewport-sm, 4.5rem)),
+    md: (font-size: clamp(3.5rem, $font-size-viewport-md, 4.5rem), line-height: clamp(3.75rem, $font-size-viewport-md, 4.5rem)),
+    lg: (font-size: clamp(3.5rem, $font-size-viewport-lg, 4.5rem), line-height: clamp(3.75rem, $font-size-viewport-lg, 4.5rem)),
+    xl: (font-size: clamp(3.5rem, $font-size-viewport-xl, 4.5rem), line-height: clamp(3.75rem, $font-size-viewport-xl, 4.5rem))
+  ),
+  3: (
+    xs: (font-size: clamp(3.25rem, $font-size-viewport-xs, 4rem), line-height: clamp(3.45rem, $font-size-viewport-xs, 4rem)),
+    sm: (font-size: clamp(3.25rem, $font-size-viewport-sm, 4rem), line-height: clamp(3.45rem, $font-size-viewport-sm, 4rem)),
+    md: (font-size: clamp(3.25rem, $font-size-viewport-md, 4rem), line-height: clamp(3.45rem, $font-size-viewport-md, 4rem)),
+    lg: (font-size: clamp(3.25rem, $font-size-viewport-lg, 4rem), line-height: clamp(3.45rem, $font-size-viewport-lg, 4rem)),
+    xl: (font-size: clamp(3.25rem, $font-size-viewport-xl, 4rem), line-height: clamp(3.45rem, $font-size-viewport-xl, 4rem))
+  ),
+  4: (
+    xs: (font-size: clamp(3rem, $font-size-viewport-xs, 3.5rem), line-height: clamp(3.15rem, $font-size-viewport-xs, 3.75rem)),
+    sm: (font-size: clamp(3rem, $font-size-viewport-sm, 3.5rem), line-height: clamp(3.15rem, $font-size-viewport-sm, 3.75rem)),
+    md: (font-size: clamp(3rem, $font-size-viewport-md, 3.5rem), line-height: clamp(3.15rem, $font-size-viewport-md, 3.75rem)),
+    lg: (font-size: clamp(3rem, $font-size-viewport-lg, 3.5rem), line-height: clamp(3.15rem, $font-size-viewport-lg, 3.75rem)),
+    xl: (font-size: clamp(3rem, $font-size-viewport-xl, 3.5rem), line-height: clamp(3.15rem, $font-size-viewport-xl, 3.75rem))
+  ),
+  5: (
+    xs: (font-size: clamp(2.85rem, $font-size-viewport-xs, 3rem), line-height: clamp(2.95rem, $font-size-viewport-xs, 3.25rem)),
+    sm: (font-size: clamp(2.85rem, $font-size-viewport-sm, 3rem), line-height: clamp(2.95rem, $font-size-viewport-sm, 3.25rem)),
+    md: (font-size: clamp(2.85rem, $font-size-viewport-md, 3rem), line-height: clamp(2.95rem, $font-size-viewport-md, 3.25rem)),
+    lg: (font-size: clamp(2.85rem, $font-size-viewport-lg, 3rem), line-height: clamp(2.95rem, $font-size-viewport-lg, 3.25rem)),
+    xl: (font-size: clamp(2.85rem, $font-size-viewport-xl, 3rem), line-height: clamp(2.95rem, $font-size-viewport-xl, 3.25rem))
+  ),
+  6: (
+    xs: (font-size: clamp(2.55rem, $font-size-viewport-xs, 2.75rem), line-height: clamp(2.65rem, $font-size-viewport-xs, 2.75rem)),
+    sm: (font-size: clamp(2.55rem, $font-size-viewport-sm, 2.75rem), line-height: clamp(2.65rem, $font-size-viewport-sm, 2.75rem)),
+    md: (font-size: clamp(2.55rem, $font-size-viewport-md, 2.75rem), line-height: clamp(2.65rem, $font-size-viewport-md, 2.75rem)),
+    lg: (font-size: clamp(2.55rem, $font-size-viewport-lg, 2.75rem), line-height: clamp(2.65rem, $font-size-viewport-lg, 2.75rem)),
+    xl: (font-size: clamp(2.55rem, $font-size-viewport-xl, 2.75rem), line-height: clamp(2.65rem, $font-size-viewport-xl, 2.75rem))
+  ),
+  7: (
+    xs: (font-size: clamp(2.15rem, $font-size-viewport-xs, 2.5rem), line-height: clamp(2.25rem, $font-size-viewport-xs, 2.55rem)),
+    sm: (font-size: clamp(2.15rem, $font-size-viewport-sm, 2.5rem), line-height: clamp(2.25rem, $font-size-viewport-sm, 2.55rem)),
+    md: (font-size: clamp(2.15rem, $font-size-viewport-md, 2.5rem), line-height: clamp(2.25rem, $font-size-viewport-md, 2.55rem)),
+    lg: (font-size: clamp(2.15rem, $font-size-viewport-lg, 2.5rem), line-height: clamp(2.25rem, $font-size-viewport-lg, 2.55rem)),
+    xl: (font-size: clamp(2.15rem, $font-size-viewport-xl, 2.5rem), line-height: clamp(2.25rem, $font-size-viewport-xl, 2.55rem))
+  ),
+  8: (
+    xs: (font-size: clamp(1.85rem, $font-size-viewport-xs, 2.25rem), line-height: clamp(2rem, $font-size-viewport-xs, 2.35rem)),
+    sm: (font-size: clamp(1.85rem, $font-size-viewport-sm, 2.25rem), line-height: clamp(2rem, $font-size-viewport-sm, 2.35rem)),
+    md: (font-size: clamp(1.85rem, $font-size-viewport-md, 2.25rem), line-height: clamp(2rem, $font-size-viewport-md, 2.35rem)),
+    lg: (font-size: clamp(1.85rem, $font-size-viewport-lg, 2.25rem), line-height: clamp(2rem, $font-size-viewport-lg, 2.35rem)),
+    xl: (font-size: clamp(1.85rem, $font-size-viewport-xl, 2.25rem), line-height: clamp(2rem, $font-size-viewport-xl, 2.35rem))
+  ),
+  9: (
+    xs: (font-size: clamp(1.5rem, $font-size-viewport-xs, 2rem), line-height: clamp(1.75rem, $font-size-viewport-xs, 2.15rem)),
+    sm: (font-size: clamp(1.5rem, $font-size-viewport-sm, 2rem), line-height: clamp(1.75rem, $font-size-viewport-sm, 2.15rem)),
+    md: (font-size: clamp(1.5rem, $font-size-viewport-md, 2rem), line-height: clamp(1.75rem, $font-size-viewport-md, 2.15rem)),
+    lg: (font-size: clamp(1.5rem, $font-size-viewport-lg, 2rem), line-height: clamp(1.75rem, $font-size-viewport-lg, 2.15rem)),
+    xl: (font-size: clamp(1.5rem, $font-size-viewport-xl, 2rem), line-height: clamp(1.75rem, $font-size-viewport-xl, 2.15rem))
+  ),
+  10: (
+    xs: (font-size: clamp(1.25rem, $font-size-viewport-xs, 1.55rem), line-height: clamp(1.5rem, $font-size-viewport-xs, 2rem)),
+    sm: (font-size: clamp(1.25rem, $font-size-viewport-sm, 1.55rem), line-height: clamp(1.5rem, $font-size-viewport-sm, 2rem)),
+    md: (font-size: clamp(1.25rem, $font-size-viewport-md, 1.55rem), line-height: clamp(1.5rem, $font-size-viewport-md, 2rem)),
+    lg: (font-size: clamp(1.25rem, $font-size-viewport-lg, 1.55rem), line-height: clamp(1.5rem, $font-size-viewport-lg, 2rem)),
+    xl: (font-size: clamp(1.25rem, $font-size-viewport-xl, 1.55rem), line-height: clamp(1.5rem, $font-size-viewport-xl, 2rem))
+  ),
+  11: (
+    xs: (font-size: clamp(1rem, $font-size-viewport-xs, 1.25rem), line-height: clamp(1.25rem, $font-size-viewport-xs, 1.55rem)),
+    sm: (font-size: clamp(1rem, $font-size-viewport-sm, 1.25rem), line-height: clamp(1.25rem, $font-size-viewport-sm, 1.55rem)),
+    md: (font-size: clamp(1rem, $font-size-viewport-md, 1.25rem), line-height: clamp(1.25rem, $font-size-viewport-md, 1.55rem)),
+    lg: (font-size: clamp(1rem, $font-size-viewport-lg, 1.25rem), line-height: clamp(1.25rem, $font-size-viewport-lg, 1.55rem)),
+    xl: (font-size: clamp(1rem, $font-size-viewport-xl, 1.25rem), line-height: clamp(1.25rem, $font-size-viewport-xl, 1.55rem))
+  ),
+  12: (
+    xs: (font-size: clamp(0.85rem, $font-size-viewport-xs, 1rem), line-height: clamp(1.2rem, $font-size-viewport-xs, 1.5rem)),
+    sm: (font-size: clamp(0.85rem, $font-size-viewport-sm, 1rem), line-height: clamp(1.2rem, $font-size-viewport-sm, 1.5rem)),
+    md: (font-size: clamp(0.85rem, $font-size-viewport-md, 1rem), line-height: clamp(1.2rem, $font-size-viewport-md, 1.5rem)),
+    lg: (font-size: clamp(0.85rem, $font-size-viewport-lg, 1rem), line-height: clamp(1.2rem, $font-size-viewport-lg, 1.5rem)),
+    xl: (font-size: clamp(0.85rem, $font-size-viewport-xl, 1rem), line-height: clamp(1.2rem, $font-size-viewport-xl, 1.5rem))
+  ),
+  13: (
+    xs: (font-size: clamp(0.65rem, $font-size-viewport-xs, 0.85rem), line-height: clamp(0.95rem, $font-size-viewport-xs, 1.2rem)),
+    sm: (font-size: clamp(0.65rem, $font-size-viewport-sm, 0.85rem), line-height: clamp(0.95rem, $font-size-viewport-sm, 1.2rem)),
+    md: (font-size: clamp(0.65rem, $font-size-viewport-md, 0.85rem), line-height: clamp(0.95rem, $font-size-viewport-md, 1.2rem)),
+    lg: (font-size: clamp(0.65rem, $font-size-viewport-lg, 0.85rem), line-height: clamp(0.95rem, $font-size-viewport-lg, 1.2rem)),
+    xl: (font-size: clamp(0.65rem, $font-size-viewport-xl, 0.85rem), line-height: clamp(0.95rem, $font-size-viewport-xl, 1.2rem))
+  )
+);
+
+// for sections, based on guidelines
+$base-line-height-adjusment-guideline: 0.3rem;
+$font-guidelines: (
+  title: (
+    1: (size: 2.55rem, line-height: calc(2.55rem + $base-line-height-adjusment-guideline)),
+    2: (size: 2.15rem, line-height: calc(2.15rem + $base-line-height-adjusment-guideline)),
+  ),
+  subtitle: (
+    1: (size: 1.6rem, line-height: calc(1.5rem + $base-line-height-adjusment-guideline)),
+    2: (size: 1.35rem, line-height: calc(1.25rem + $base-line-height-adjusment-guideline)),
+  ),
+  content: (
+    1: (size: 1.1rem, line-height: calc(1.1rem + $base-line-height-adjusment-guideline)),
+    2: (size: 0.85rem, line-height: calc(0.85rem + $base-line-height-adjusment-guideline)),
+  )
+);
